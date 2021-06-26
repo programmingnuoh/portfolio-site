@@ -1,2 +1,11 @@
-<h1>Contacts#index</h1>
-<p>Find me in app/views/contacts/index.html.erb</p>
+<main>
+  <div class="contact">
+    <h3>お問合せ</h3>
+    <%= form_with model:@contact, local:true do |f| %>
+      <%= f.text_field :name, placeholder:'お名前', class:"" %><br>
+      <%= f.text_field :mail_address, placeholder:'返信先のメールアドレス' %><br>
+      <%= f.text_area :message, placeholder: 'お問合せ内容' %><br>
+      <%= f.submit "送信" %>
+    <% end %>
+  </div>
+</main>
