@@ -1,0 +1,208 @@
+body{
+    background-color: #00ced1;
+}
+
+p, h3{
+    text-align: center;
+}
+
+.header-area{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #ffffff;
+}
+
+.header-list{
+    display: flex;
+}
+
+.list-content{
+    list-style: none;
+    margin: 15px;
+}
+
+main{
+    width: 100%;
+    min-width: 555px;
+}
+
+.welcome-area,.profile-area,.work-area,
+.skill-area,.history-area,.mind-area,.contact-area{
+    min-height: 100vh;
+}
+
+.title{
+    font-size: 32px;
+    margin: 40px;
+}
+
+.title-area{
+    padding-top: 350px;
+    background-color: #ffffff;
+    min-height: 70vh;
+}
+
+.site-title{
+    font-size: 72px;
+    font-weight: 100;
+}
+
+.underline{
+    text-decoration: underline 2px #d10065;
+}
+
+.profile-area{
+    margin: 20px auto;
+}
+
+.welcome-area{
+    margin: 100px auto 20px;
+}
+
+.welcome-title{
+    font-size: 32px;
+    font-weight: 500;
+    padding-top: 250px;
+}
+
+.welcome-contents{
+    margin: 80px;
+}
+
+.sentence{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.profile-area{
+    width: 100%;
+}
+
+.my-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.my-icon{
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+.profile-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-icon{
+    margin: auto 15px;
+}
+
+.profile-contents{
+    margin: 50px;
+}
+
+.work-title{
+    font-size: 18px;
+}
+
+.work-contents{
+    width: 80vw;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-content{
+    width: 300px;
+    height: 300px;
+    background-color: #bcd1d1;
+    border-radius: 10px;
+    margin: 30px 50px;
+}
+
+.skill-contents{
+    width: 100vw;
+    padding: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.skill-content{
+    display: inline-block;
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+    padding: 0 40px 0 18px;
+    font-size: 18px;
+    color: #bcd1d1;
+    box-sizing: border-box;
+    border-radius: 10px 0 0 10px;
+}
+
+.skill-content:after{
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 0px;
+    z-index: 1;
+}
+
+.skill-content:after{
+    top: 0;
+    right: 0;
+    border-width: 30px 15px 30px 0px;
+    border-color: transparent #00ced1 transparent transparent;
+    border-style: solid;
+}
+
+.programming{
+    background: #d10065;
+}
+
+.others{
+    background: #d16c00;
+}
+
+.mind-contents{
+    margin-top: 80px;
+}
+
+.contact-contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.contact-content{
+    margin: 10px auto;
+    display: block;
+    height: 50px;
+    width: 60vw;
+    border: none;
+    border-bottom: 2px solid #d10065;
+    border-radius: 10px;
+    background-color: rgba(188,209,209,0.7);
+    outline: none;
+    padding: 10px;
+}
+
+.message{
+    height: 150px;
+}
+
+.submit{
+    width: 40vw;
+}
+
+.footer-area{
+    padding: 40px;
+}

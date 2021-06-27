@@ -1,3 +1,14 @@
+<header class="header-area">
+    <div class="header-icon">
+      <%= image_tag "site-logo.jpg", :size => '200x74' %>
+    </div>
+    <ul class="header-list">
+      <li class="list-content">Top
+      <li class="list-content">This Site
+      <li class="list-content">My Profile
+      <li class="list-content">Contact
+    </ul>
+</header>
 <main>
   <div class="title-area">
     <p class="site-title">
@@ -6,83 +17,101 @@
   </div>
   <div class="welcome-area">
     <h3 class="welcome-title">
-      我がポートフォリオサイトにお越しくださり、<br>
+      我がポートフォリオサイトにお越しくださり、<br />
       ありがとうございます。
     </h3>
-    <p class="welcome-contents">
-      　このサイトは、未経験エンジニア転職を目指す私、IDEを<br>
-      知っていただくためにまとめたページです。<br>
-      どうぞごゆるりとご覧くださいませ。
+    <p class="welcome-contents sentence underline">
+      このサイトは、未経験エンジニア転職を目指す私、IDEを<br />
+      知っていただくためにまとめたページです。<br />
+      どうぞごゆるりとご覧くださいませ。<br />
     </p>
   </div>
   <div class="profile-area">
     <div class="profile-title-area">
-      <h3 class="profile-title">
+      <h3 class="title">
         私のこと。
       </h3>
-      <div class="profile-icon">
-        <img>
-        <img>
-        <img>
+      <div class="my-icons">
+        <%= image_tag 'my-icon.jpg', class:"my-icon", :size => '120x120' %>
+        <ul class="profile-icons">
+          <li class="profile-icon"><%= image_tag('twitter-logo.png', :size => '48x36') %>
+          <li class="profile-icon"><%= image_tag('github-logo.png', :size => '48x48') %>
+          <%# <li><%= link_to image_tag() %> 
+        </ul>
       </div>
     </div>
-    <p class="profile-contents">
-      　生まれも育ちも埼玉の生粋さいたまん(26~27歳)。服飾系の大学でファッション/デザイン史を
-      学んだのち、かばん・財布の卸商社へ入社。営業に従事する傍ら、企画や広報の業務にも携わる。
-      営業をする中で、IT技術で世の課題解決ができるものを開発したいと思い、エンジニア転職を決意、現在に至る。
+    <p class="profile-contents sentence">
+      　生まれも育ちも埼玉の生粋さいたまん(26~27歳)。服飾系の大学でファッション/デザイン史を<br />
+      学んだのち、かばん・財布の卸商社へ入社。営業に従事する傍ら、企画や広報の業務にも携わる。<br />
+      営業をする中で、IT技術で世の課題解決ができるものを開発したいと思い、エンジニア転職を決意、現在に至る。<br />
     </div>
   </div>
   <div class="work-area">
-    <h3 class="work-title">
+    <h3 class="title">
       作ったもの。
     </h3>
-    <p class="work-title-app">アプリケーション</p>
+    <p class="work-title">アプリケーション</p>
     <div class="work-contents">
       <div class="work-content"></div>
       <div class="work-content"></div>
     </div>
-    <p class="work-title-extra">そのほか</p>
+    <p class="work-title">そのほか</p>
     <div class="work-contents">
       <div class="work-content"></div>
       <div class="work-content"></div>
     </div>
   </div>
   <div class="skill-area">
-    <h3 class="skill-title">
+    <h3 class="title">
       私ができること。
     </h3>
     <div class="skill-contents">
-      <div class="skill-content"></div>
-      <div class="skill-content"></div>
-      <div class="skill-content"></div>
+      <div class="skill-content programming">HTML</div>
+      <div class="skill-content programming">CSS</div>
+      <div class="skill-content programming">Ruby</div>
+    </div>
+    <div class="skill-contents">
+      <div class="skill-content programming">Ruby on Rails</div>
+      <div class="skill-content programming">JavaScript</div>
+      <div class="skill-content programming">GitHub</div>
+    </div>
+    <div class="skill-contents">
+      <div class="skill-content others">TOEIC(685点)</div>
+      <div class="skill-content others">Photoshop</div>
+      <div class="skill-content others">Illustrator</div>
     </div>
   </div>
   <div class="history-area">
-    <h3 class="history-title">
+    <h3 class="title">
       私の今まで。
     </h3>
     <div class="history-contents"></div>
   </div>
   <div class="mind-area">
-    <h3 class="mind-title">
+    <h3 class="title">
       私が大切にしていること。
     </h3>
-    <p class="mind-contents">
-      　私は、常にエンドユーザーの目線を意識して仕事に取り組んで
-      まいりました。商品の見せ方、売り方、謳い文句…。
-      買ってよかった！使ってよかった！と思っていただけるように試行錯誤を繰り返していました。
-      　この気持ちは、エンジニアになっても変わらず大切にしていきたいと考えています。
-      お客様の使ってよかった！を聞くために、より良いサービスを
-      開発できるよう、今後も仕事に従事していきます。
+    <p class="mind-contents sentence">
+      　私は、常にエンドユーザーの目線を意識して仕事に取り組んで<br />
+      まいりました。商品の見せ方、売り方、謳い文句…。<br />
+      買ってよかった！使ってよかった！と思っていただけるように試行錯誤を繰り返していました。<br />
+      　この気持ちは、エンジニアになっても変わらず大切にしていきたいと考えています。<br />
+      お客様の使ってよかった！を聞くために、より良いサービスを<br />
+      開発できるよう、今後も仕事に従事していきます。<br />
     </p>
   </div>
   <div class="contact-area">
-    <h3 class="contact-title">お問合せ</h3>
+    <h3 class="title">お問合せ</h3>
+    <div class="contact-contents">
     <%= form_with model: @contact, local:true do |f| %>
-      <%= f.text_field :name, placeholder:'お名前', class:"" %><br>
-      <%= f.text_field :mail_address, placeholder:'返信先のメールアドレス' %><br>
-      <%= f.text_area :message, placeholder: 'お問合せ内容' %><br>
-      <%= f.submit "送信" %>
+      <%= f.text_field :name, placeholder:'お名前', class:"contact-content" %><br>
+      <%= f.text_field :mail_address, placeholder:'返信先のメールアドレス', class:"contact-content" %><br>
+      <%= f.text_area :message, placeholder: 'お問合せ内容',class:"contact-content message" %><br>
+      <%= f.submit "送信",class:"contact-content submit" %>
     <% end %>
+    </div>
   </div>
 </main>
+<footer class="footer-area">
+  <p class="copyright">Copyright ©️IDE's Portfolio Site All rights reserved.</p>
+</footer>
