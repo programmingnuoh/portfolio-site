@@ -34,9 +34,9 @@
       <div class="my-icons">
         <%= image_tag 'my-icon.jpg', class:"my-icon", :size => '120x120' %>
         <ul class="profile-icons">
-          <li class="profile-icon"><%= image_tag('twitter-logo.png', :size => '48x36') %>
-          <li class="profile-icon"><%= image_tag('github-logo.png', :size => '48x48') %>
-          <%# <li><%= link_to image_tag() %> 
+          <li class="twitter-icon"><%= link_to image_tag('twitter-logo.png', :size => '48x36'), 'https://twitter.com/programmingnuoh' %>
+          <li class="github-icon"><%= link_to image_tag('github-logo.png', :size => '48x48'), 'https://github.com/programmingnuoh' %>
+          <li class="hatena-icon"><%= link_to image_tag('hatena-logo.svg', :size => '72x72'), 'https://t.co/FCUoXZJScg?amp=1' %> 
         </ul>
       </div>
     </div>
@@ -51,11 +51,6 @@
       作ったもの。
     </h3>
     <p class="work-title">アプリケーション</p>
-    <div class="work-contents">
-      <div class="work-content"></div>
-      <div class="work-content"></div>
-    </div>
-    <p class="work-title">そのほか</p>
     <div class="work-contents">
       <div class="work-content"></div>
       <div class="work-content"></div>
@@ -87,77 +82,146 @@
     <h3 class="title">
       私の今まで。
     </h3>
-    <div class="history-contents">
-<section id="conference-timeline">
-    <div class="timeline-start">Start</div>
-    <div class="conference-center-line"></div>
-    <div class="conference-timeline-content">
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-left-container">
-          <div class="content-left">
-            <p>When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is. Mankind, let us preserve and increase this beauty, and not destroy it! <span class="article-number">01</span></p>
+    <section id="history-contents">
+      <div class="timeline-start">1994/07<br />爆誕</div>
+      <div class="conference-center-line"></div>
+      <div class="conference-timeline-content">
+        <div class="timeline-article">
+          <div class="content-left-container">
+            <div class="content-head">
+              <div class="year-box">
+                <span>2007</span>
+              </div>
+              <div class="history-images">
+                <span class="material-icons">videocam</span>
+                <span class="material-icons">mic</span>
+                <span class="material-icons">group</span>
+              </div>
+            </div>
+            <div class="content-left">
+              <p>埼玉県内のとある中高一貫校に入学。高校時代には放送部に所属し、ドキュメンタリーやドラマの制作を行なっていた。そのときの仲間は今でも最高の友人たち。</p>
+            </div>
           </div>
-          <span class="timeline-author">John Doe</span>
+          <div class="meta-date"></div>
         </div>
-        <div class="content-right-container">
-          <div class="content-right">
-            <p>When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is. <span class="article-number">02</span></p>
+
+        <div class="timeline-article">
+          <div class="content-right-container">
+            <div class="content-head">
+              <div class="year-box">
+                <span>2013</span>
+              </div>
+              <div class="history-images">
+                <span class="material-icons">checkroom</span>
+                <span class="material-icons">iron</span>
+                <span class="material-icons">auto_stories</span>
+              </div>
+            </div>
+            <div class="content-right">
+              <p>ファッションが学べる大学へ進学。作品制作等でファッションに対する基礎知識を深めた後、デザイン史ゼミに所属する。
+              このときに本当に知りたいことを学んでいくうちに勉強の楽しさを実感する。</p>
+            </div>
           </div>
-          <span class="timeline-author">John Doe</span>
+          <div class="meta-date"></div>
         </div>
-        <div class="meta-date">
-          <span class="date">18</span>
-          <span class="month">APR</span>
+
+        <div class="timeline-article">
+          <div class="content-left-container">
+            <div class="content-head">
+              <div class="year-box">
+                <span>2017</span>
+              </div>
+              <div class="history-images">
+                <span class="material-icons">badge</span>
+                <span class="material-icons">luggage</span>
+                <span class="material-icons">directions_transit</span>
+              </div>
+            </div>
+            <div class="content-left">
+              <p>カバン・財布の卸商社へ入社。法人営業として全国展開するお取引先様の担当になり、日本各地を駆け巡る。
+              各ご担当の方を仕事をしていく中で、お客様のことを第一に考えた商品展開について熟考する。チーム内で売り上げが1番になったときは嬉しかった。</p>
+            </div>
+          </div>
+          <div class="meta-date"></div>
+        </div>
+
+        <div class="timeline-article">
+          <div class="content-right-container">
+            <div class="content-head">
+              <div class="year-box">
+                <span>2018</span>
+              </div>
+              <div class="history-images">
+                <span class="material-icons">backpack</span>
+                <span class="material-icons">style</span>
+                <span class="material-icons">design_services</span>
+              </div>
+            </div>
+            <div class="content-right">
+              <p>新規プロジェクトに企画・営業として携わる。商品企画を1から行なった。外部展示会に出展し、注文もいただいたがその後思うように売れず1年ほどでプロジェクトは終了してしまった。
+              お客様のニーズに応えられる商品企画をすることの難しさを学んだ。</p>
+            </div>
+          </div>
+          <div class="meta-date"></div>
+        </div>
+ 
+        <div class="timeline-article">
+          <div class="content-left-container">
+            <div class="content-head">
+              <div class="year-box">
+                <span>2019</span>
+              </div>
+              <div class="history-images">
+                <span class="material-icons">shopping_bag</span>
+                <span class="material-icons">devices</span>
+                <span class="material-icons">contact_mail</span>
+              </div>
+            </div>
+            <div class="content-left">
+              <p>百貨店向けブランドを扱う子会社へ出向。ECモールに出店されている小売店の営業を担当。単価が異なる商品の営業に四苦八苦する。</p>
+            </div>
+          </div>
+          <div class="content-right-container">
+            <div class="content-head">
+              <div class="year-box">
+                <span>2019</span>
+              </div>
+              <div class="history-images">
+                <span class="material-icons">brush</span>
+                <span class="material-icons">palette</span>
+                <span class="material-icons">photo_camera</span>
+              </div>
+            </div>
+            <div class="content-right">
+              <p>出向と同時に営業の傍ら広報としても携わる。お取引先様向けのカタログやバナーの作成などを行っている。
+              IllustratorやPhotoshopを学習するため、オンライン講座を見たり、社内のデザイナーさんからアドバイスをいただいたりなどをすることでソフトに対する知見を学んだ。</p>
+            </div>
+          </div>
+          <div class="meta-date"></div>
+        </div>
+
+        <div class="timeline-article">
+          <div class="content-left-container">
+            <div class="content-head">
+              <div class="year-box">
+                <span>2020</span>
+              </div>
+              <div class="history-images">
+                <span class="material-icons">laptop_mac</span>
+                <span class="material-icons">code</span>
+                <span class="material-icons">local_fire_department</span>
+              </div>
+            </div>
+            <div class="content-left">
+              <p>エンジニア転職を目指し、プログラミングの学習を始める。ただモノを生産するだけでなく、どのようにお客様のもとへ届けるか考えた末辿り着いたのがITだった。
+              より良い商品をもっと多くの方のもとへ届けたいという考えから転職を志す。</p>
+            </div>
+          </div>
+          <div class="meta-date"></div>
         </div>
       </div>
-      <!-- // Article -->
-      
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-left-container">
-          <div class="content-left">
-            <p>When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is. Mankind, let us preserve and increase this beauty, and not destroy it! <span class="article-number">01</span></p>
-          </div>
-          <span class="timeline-author">John Doe</span>
-        </div>
-        <div class="content-right-container">
-          <div class="content-right">
-            <p>When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is. <span class="article-number">02</span></p>
-          </div>
-          <span class="timeline-author">John Doe</span>
-        </div>
-        <div class="meta-date">
-          <span class="date">18</span>
-          <span class="month">APR</span>
-        </div>
-      </div>
-      <!-- // Article -->
-      
-      <!-- Article -->
-      <div class="timeline-article">
-        <div class="content-left-container">
-          <div class="content-left">
-            <p>When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is. Mankind, let us preserve and increase this beauty, and not destroy it! <span class="article-number">01</span></p>
-          </div>
-          <span class="timeline-author">John Doe</span>
-        </div>
-        <div class="content-right-container">
-          <div class="content-right">
-            <p>When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is. <span class="article-number">02</span></p>
-          </div>
-          <span class="timeline-author">John Doe</span>
-        </div>
-        <div class="meta-date">
-          <span class="date">18</span>
-          <span class="month">APR</span>
-        </div>
-      </div>
-      <!-- // Article -->
-    </div>
-    <div class="timeline-end">End</div>
-  </section>
-    </div>
+      <div class="timeline-end">To be continued...</div>
+    </section>
   </div>
   <div class="mind-area">
     <h3 class="title">

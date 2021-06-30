@@ -97,8 +97,8 @@ main{
     align-items: center;
 }
 
-.profile-icon{
-    margin: auto 15px;
+.github-icon{
+    margin: auto 20px auto 30px;
 }
 
 .profile-contents{
@@ -179,74 +179,39 @@ main{
     background: #d16c00;
 }
 
-.mind-contents{
-    margin-top: 80px;
-}
-
-.contact-contents{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-}
-
-.contact-content{
-    margin: 10px auto;
-    display: block;
-    height: 50px;
-    width: 60vw;
-    border: none;
-    border-bottom: 2px solid #d10065;
-    border-radius: 10px;
-    background-color: rgba(188,209,209,0.7);
-    outline: none;
-    padding: 10px;
-}
-
-.message{
-    height: 150px;
-}
-
-.submit{
-    width: 40vw;
-}
-
-.footer-area{
-    padding: 40px;
-}
-
-#conference-timeline {
+#history-contents {
     position: relative;
     max-width: 920px;
     width: 100%;
-    margin: 0 auto;
+    margin: 100px auto 0;
   }
-  #conference-timeline .timeline-start,
-  #conference-timeline .timeline-end {
+  #history-contents .timeline-start,
+  #history-contents .timeline-end {
     display: table;
-    font-family: "Roboto", sans-serif;
     font-size: 18px;
-    font-weight: 900;
+    font-weight: 300;
     text-transform: uppercase;
-    background: #00b0bd;
+    background: #bcd1d1;
     padding: 15px 23px;
-    color: #fff;
-    max-width: 5%;
+    color: #d10065;
+    max-width: 20%;
     width: 100%;
     text-align: center;
     margin: 0 auto;
+    border-radius: 10px;
+    z-index: 100;
   }
-  #conference-timeline .conference-center-line {
+  #history-contents .conference-center-line {
     position: absolute;
     width: 3px;
-    height: 100%;
-    top: 0;
+    height: 95%;
+    top: 75px;
     left: 50%;
     margin-left: -2px;
-    background: #00b0bd;
-    z-index: -1;
+    background: #bcd1d1;
+    z-index: 0;
   }
-  #conference-timeline .conference-timeline-content {
+  #history-contents .conference-timeline-content {
     padding-top: 67px;
     padding-bottom: 67px;
   }
@@ -255,46 +220,31 @@ main{
     height: 100%;
     position: relative;
     overflow: hidden;
-    margin: 20px 0;
+    margin: 60px 0;
   }
   .timeline-article .content-left-container,
   .timeline-article .content-right-container {
     max-width: 44%;
     width: 100%;
   }
-  .timeline-article .timeline-author {
-    display: block;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: #242424;
-    text-align: right;
-  }
+ 
   .timeline-article .content-left,
   .timeline-article .content-right {
     position: relative;
     width: auto;
-    border: 1px solid #ddd;
     background-color: #fff;
     box-shadow: 0 1px 3px rgba(0,0,0,.03);
     padding: 27px 25px;
+    border-radius: 0 0 10px 10px;
   }
   .timeline-article p {
-    margin: 0 0 0 60px;
+    margin: 10px;
     padding: 0;
     font-weight: 400;
     color: #242424;
     font-size: 14px;
     line-height: 24px;
     position: relative;
-  }
-  .timeline-article p span.article-number {
-    position: absolute;
-    font-weight: 300;
-    font-size: 44px;
-    top: 10px;
-    left: -60px;
-    color: #00b0bd;
   }
   .timeline-article .content-left-container {
     float: left;
@@ -307,16 +257,19 @@ main{
     position: absolute;
     top: 20px;
     font-size: 23px;
-    font-family: "FontAwesome";
     color: #fff;
   }
   .timeline-article .content-left:before {
-    content: "\f0da";
-    right: -8px;
+    content: "　　　";
+    top: -60px;
+    right: -60px;
+    border-top: 5px solid #bcd1d1;
   }
   .timeline-article .content-right:before {
-    content: "\f0d9";
-    left: -8px;
+    content: "　　　";
+    top: -60px;
+    left: -60px;
+    border-top: 5px solid #bcd1d1;
   }
   .timeline-article .meta-date {
     position: absolute;
@@ -325,33 +278,46 @@ main{
     width: 62px;
     height: 62px;
     margin-left: -31px;
-    color: #fff;
     border-radius: 100%;
-    background: #00b0bd;
+    background: #bcd1d1;
   }
-  .timeline-article .meta-date .date,
-  .timeline-article .meta-date .month {
-    display: block;
-    text-align: center;
-    font-weight: 900;
+
+  .content-head{
+    display: flex;
+    justify-content: space-between;
+    background-color: #bcd1d1;
+    padding: 12px 36px 10px;
+    border-radius: 10px 10px 0 0;
   }
-  .timeline-article .meta-date .date {
-    font-size: 30px;
-    line-height: 40px;
+
+  .year-box span{
+    color: #d10065;
+    font-size: 48px;
+    font-weight: 500;
   }
-  .timeline-article .meta-date .month {
-    font-size: 18px;
-    line-height: 10px;
+
+  .history-images{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10px;
   }
+
+  .history-image{
+    height: 60px;
+    width: 60px;
+  }
+  
   /*===== // Vertical Timeline =====*/
   
   /*===== Resonsive Vertical Timeline =====*/
   @media only screen and (max-width: 830px) {
-    #conference-timeline .timeline-start,
-    #conference-timeline .timeline-end {
+    #history-contents .timeline-start,
+    #history-contents .timeline-end {
       margin: 0;
     }
-    #conference-timeline .conference-center-line {
+    #history-contents .conference-center-line {
       margin-left: 0;
       left: 50px;
     }
@@ -375,13 +341,13 @@ main{
       padding: 10px 25px;
       min-height: 65px;
     }
-    .timeline-article .content-left:before {
-      content: "\f0d9";
-      right: auto;
-      left: -8px;
-    }
+    .timeline-article .content-left:before,
     .timeline-article .content-right:before {
-      display: none;
+      content: "　";
+      width: 10%;
+      top: -60px;
+      left: -60px;
+      border-top: 5px solid #bcd1d1;
     }
   }
   @media only screen and (max-width: 400px) {
@@ -393,3 +359,43 @@ main{
     }
     
   }
+
+.mind-area{
+  margin-top: 300px;
+}
+
+.mind-contents{
+  margin-top: 80px;
+}
+
+.contact-contents{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.contact-content{
+  margin: 10px auto;
+  display: block;
+  height: 50px;
+  width: 60vw;
+  border: none;
+  border-bottom: 2px solid #d10065;
+  border-radius: 10px;
+  background-color: rgba(188,209,209,0.7);
+  outline: none;
+  padding: 10px;
+}
+
+.message{
+  height: 150px;
+}
+
+.submit{
+  width: 40vw;
+}
+
+.footer-area{
+  padding: 40px;
+}
