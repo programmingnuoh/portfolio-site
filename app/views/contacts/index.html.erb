@@ -1,32 +1,35 @@
 <header class="header-area">
     <div class="header-icon">
-      <%= image_tag "site-logo.jpg", :size => '200x74' %>
+      <%= image_tag "site-logo.jpg" %>
     </div>
-    <ul class="header-list">
-      <li class="list-content">Top
-      <li class="list-content">This Site
-      <li class="list-content">My Profile
-      <li class="list-content">Contact
+    <ul class="header-list", id="header-list">
+      <li><a href="/", class="list-content">Top</a>
+      <li><a href="#welcome-area", class="list-content">This Site</a>
+      <li><a href="#profile-area", class="list-content">My Profile</a>
+      <li><a href="#contact-area", class="list-content">Contact</a>
     </ul>
 </header>
 <main>
-  <div class="title-area">
-    <p class="site-title">
+  <div class="title-area", id="title-area">
+    <p class="site-title maintitleFadeIn">
       IDE's Portfolio Site
     </p>
   </div>
-  <div class="welcome-area">
+  <canvas id="sineCanvas"></canvas>
+  <div class="welcome-area", id="welcome-area">
     <h3 class="welcome-title">
       我がポートフォリオサイトにお越しくださり、<br />
       ありがとうございます。
     </h3>
-    <p class="welcome-contents sentence underline">
+    <p class="welcome-contents">
+      <span class='sentence'>
       このサイトは、未経験エンジニア転職を目指す私、IDEを<br />
       知っていただくためにまとめたページです。<br />
       どうぞごゆるりとご覧くださいませ。<br />
+      </span>
     </p>
   </div>
-  <div class="profile-area">
+  <div class="profile-area", id="profile-area">
     <div class="profile-title-area">
       <h3 class="title">
         私のこと。
@@ -40,10 +43,12 @@
         </ul>
       </div>
     </div>
-    <p class="profile-contents sentence">
+    <p class="profile-contents">
+      <span class='sentence'>
       　生まれも育ちも埼玉の生粋さいたまん(26~27歳)。服飾系の大学でファッション/デザイン史を<br />
       学んだのち、かばん・財布の卸商社へ入社。営業に従事する傍ら、企画や広報の業務にも携わる。<br />
       営業をする中で、IT技術で世の課題解決ができるものを開発したいと思い、エンジニア転職を決意、現在に至る。<br />
+      </span>
     </div>
   </div>
   <div class="work-area">
@@ -227,16 +232,18 @@
     <h3 class="title">
       私が大切にしていること。
     </h3>
-    <p class="mind-contents sentence">
+    <p class="mind-contents">
+      <span class='sentence'>
       　私は、常にエンドユーザーの目線を意識して仕事に取り組んで<br />
       まいりました。商品の見せ方、売り方、謳い文句…。<br />
       買ってよかった！使ってよかった！と思っていただけるように試行錯誤を繰り返していました。<br />
       　この気持ちは、エンジニアになっても変わらず大切にしていきたいと考えています。<br />
       お客様の使ってよかった！を聞くために、より良いサービスを<br />
       開発できるよう、今後も仕事に従事していきます。<br />
+      </span>
     </p>
   </div>
-  <div class="contact-area">
+  <div class="contact-area", id="contact-area">
     <h3 class="title">お問合せ</h3>
     <div class="contact-contents">
     <%= form_with model: @contact, local:true do |f| %>
@@ -252,9 +259,11 @@
       最後までご覧いただき、<br />
       ありがとうございました。
     </h3>
-    <p class="welcome-contents sentence underline">
+    <p class="welcome-contents">
+      <span class='sentence'>
       このサイトを見てくださった皆様にお会いできる日を<br />
       心より楽しみにしております。<br />
+      </span>
     </p>
   </div>
 
