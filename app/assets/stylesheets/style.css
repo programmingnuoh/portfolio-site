@@ -163,6 +163,22 @@ main{
     margin: 30px 50px;
 }
 
+.works-logo{
+    width: 220px;
+    margin: 40px auto ;
+}
+
+.logo-image{
+  width: 220px;
+  height: auto;
+}
+
+.works-title{
+  font-size: 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
 .skill-area{
     margin-top: 300px;
 }
