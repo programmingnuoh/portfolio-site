@@ -33,6 +33,17 @@ main{
 .skill-area,.history-area,.mind-area,.contact-area{
     min-height: 100vh;
 }
+.wave{
+  position: relative;
+  height: 200px;
+}
+
+canvas{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
 
 .title{
     font-size: 32px;
