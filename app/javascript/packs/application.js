@@ -9,7 +9,7 @@ require("@rails/activestorage").start()
 require("channels")
 require("jquery")
 require('packs/move')
-// require('packs/wave')
+require('packs/wave')
 
 //= require jquery
 //= require jquery_ujs

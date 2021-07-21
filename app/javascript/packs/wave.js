@@ -15,12 +15,12 @@ function init() {
     colorList = [];
     // canvas1個めの色指定
     canvasList.push(document.getElementById("waveCanvas"));
-    colorList.push(['#7a49a5']);
+    colorList.push(['#00ced1']);
 	// 各キャンバスの初期化
 		for(var canvasIndex in canvasList) {
         var canvas = canvasList[canvasIndex];
         canvas.width = document.documentElement.clientWidth; //Canvasのwidthをウィンドウの幅に合わせる
-        canvas.height = 200;//波の高さ
+        canvas.height = 500;//波の高さ
         canvas.contextCache = canvas.getContext("2d");
     }
     // 共通の更新処理呼び出し
@@ -96,6 +96,6 @@ function drawSine(canvas, t, zoom, delay) {
     }
 }
 
-$(window).load(function(){
+$(window).on('load',function(){
     init();
 });
