@@ -24,7 +24,7 @@ p, h3{
     text-decoration: none;
 }
 
-main{
+.main{
     width: 100%;
     min-width: 555px;
 }
@@ -32,6 +32,7 @@ main{
 .welcome-area,.profile-area,.work-area,
 .skill-area,.history-area,.mind-area,.contact-area{
     min-height: 100vh;
+    position: relative;
 }
 .wave{
   position: relative;
@@ -45,7 +46,7 @@ canvas{
   width: 100%;
 }
 
-#bubbles {
+#bubbles-1, #bubbles-2, #bubbles-3{
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -56,9 +57,9 @@ canvas{
 
 .bubble {
   position: absolute;
-  bottom: -20vh;
+  bottom: 0;
   background-color: transparent;
-  border: 1px solid red;
+  border: 1px solid #ffffff;
   border-radius: 50%;
 }
 
