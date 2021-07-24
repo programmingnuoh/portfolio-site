@@ -46,7 +46,7 @@ canvas{
   width: 100%;
 }
 
-#bubbles-1, #bubbles-2, #bubbles-3{
+#bubbles{
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -252,6 +252,25 @@ canvas{
     border-width: 30px 15px 30px 0px;
     border-color: transparent #00ced1 transparent transparent;
     border-style: solid;
+}
+
+.flipRightTop{
+  animation-name:flipRightTopAnime;
+  animation-duration:1s;
+  animation-fill-mode:forwards;
+  opacity:0;
+  }
+  
+@keyframes flipRightTopAnime{
+  from {
+   transform: translate(-20px,80px) rotate(25deg);
+   opacity: 0;
+  }
+  
+  to {
+    transform: translate(0,1) rotate(0deg);
+    opacity: 1;
+  }
 }
 
 .programming{
