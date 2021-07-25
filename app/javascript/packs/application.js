@@ -11,6 +11,7 @@ require("jquery")
 require('packs/move')
 require('packs/wave')
 require('packs/bubble')
+require('packs/work-move')
 
 //= require jquery
 //= require jquery_ujs

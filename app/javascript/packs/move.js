@@ -1,8 +1,3 @@
-$(window).on('load', function(){
-    $(function(){
-      });
-});
-
 function titleFade(){
   $('.title').each(function(){
     const elemPos = $(this).offset().top-50;
@@ -74,5 +69,5 @@ $(window).scroll(function(){
   timeArticleFade();
   sentenceUnderline();
   skillFrip();
+  workHover();
 });
-

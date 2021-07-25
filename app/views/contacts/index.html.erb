@@ -47,7 +47,7 @@
     </div>
     <p class="profile-contents">
       <span class='sentence'>
-      　生まれも育ちも埼玉の生粋さいたまん(26~27歳)。服飾系の大学でファッション/デザイン史を<br />
+      　生まれも育ちも埼玉の生粋さいたまん(27歳)。服飾系の大学でファッション/デザイン史を<br />
       学んだのち、かばん・財布の卸商社へ入社。営業に従事する傍ら、企画や広報の業務にも携わる。<br />
       営業をする中で、IT技術で世の課題解決ができるものを開発したいと思い、エンジニア転職を決意、現在に至る。<br />
       </span>
@@ -59,18 +59,78 @@
     </h3>
     <p class="work-title">アプリケーション</p>
     <div class="work-contents">
-      <div class="work-content">
+      <div class="work-deli-content">
         <div class="works-logo">
           <%= image_tag "oriapp.png" %>
         </div>
         <h2 class="works-title">Deli share<br />（惣菜共有アプリ）</h2>
       </div>
-      <div class="work-content">
-        <div class="works-logo">
-          <%= image_tag "site-logo.png", class:"logo-image" %>  
+      <div class="work-deli-detail">
+        <div class="works-detail-title">
+          <a href='http://35.74.57.140/', class="works-detail-name">Deli share
+          <%= link_to image_tag('github-logo.png', class:'works-github'), 'https://github.com/programmingnuoh/delishare' %>
+          <p class="work-exit">×</p>
         </div>
-        <h2 class="works-title">ポートフォリオサイト</h2>      
+        <p class="works-explanation">
+          このアプリケーションは、企画立案〜デプロイまで初めて1人で行った開発物です。<br />
+          スーパーマーケットやコンビニで売っている惣菜やそのアレンジレシピを共有できるアプリです。<br />
+          これは、私が出張族だったときに欲しかったな、と思ったものを形にしました。<br />
+          そのため、アプリの雰囲気は20代女性に使っていただけるような明るい印象に、
+          しかしレイアウトはあまり機械が得意でない方にも気軽に使っていただけるようにわかりやすくするよう心がけました。<br />
+          将来的に、SNS共有/連携ができるようにして、さらにアプリ利用者が自分の投稿を拡散できるようにしたいと思っています。<br />
+        </p>
+        <div class="works-info">
+          <div class="works-environment">
+            <h5 class="use-language">使用言語など</h5>
+            <p class="use-language-info">
+              Ruby on Rails, HTML/CSS, JavaScript, jQuery, MySQL, AWS
+            </p>
+          </div>
+          <div class="works-images-slide">
+            <%# <p class="image-prev">◀︎</p> %>
+            <div class="works-image-box">
+              <%= image_tag("deli-1.png", class:"main-image") %>
+            </div>
+            <%# <p class="image-next">▶︎</p> %>
+          </div>
+        </div>
       </div>
+      <div class="work-ide-content">
+        <div class="works-logo">
+          <%= image_tag "site-logo.png", class:"logo-image" %>
+        </div>
+        <h2 class="works-title">ポートフォリオサイト</h2>
+      </div>
+      <div class="work-ide-detail block">
+        <div class="works-detail-title">
+          <a href='#', class="works-detail-name">IDE's Portfolio Site
+          <%= link_to image_tag('github-logo.png', class:'works-github'), 'https://github.com/programmingnuoh/portfolio-site' %>
+          <p class="work-exit">×</p>
+        </div>
+        <p class="works-explanation">
+          このサイトは、私自身について今現在のスキルや簡単な経歴について知っていただけるよう作成しました。<br />
+          フロントをこだわりたかったので、ここでjQueryを使い、今自分ができる限りの表現をこのサイト内でしています。<br />
+          ちなみにこのサイトのイメージがなぜ水モチーフなのかというと、<br />
+          子供の頃ずっと水泳をやっていたこと、好きなキャラクターが水に関係していることが多いことが理由です。<br />
+          好きを要所要所に散りばめてみました笑。<br />
+          閲覧者様がこのサイトを見ていただくことでより深く私のことについて知っていただければと思います。
+        </p>        
+        <div class="works-info">
+          <div class="works-environment">
+            <h5 class="use-language">使用言語など</h5>
+            <p class="use-language-info">
+              Ruby on Rails, HTML/CSS, JavaScript, jQuery
+            </p>
+          </div>
+          <div class="works-images-slide">
+            <%# <p class="image-prev">◀︎</p> %>
+            <div class="works-image-box">
+              <%= image_tag("ide-1.png", class:"main-image") %>
+            </div>
+            <%# <p class="image-next">▶︎</p> %>
+          </div>
+        </div>
+      </div> 
     </div>
   </div>
   <div class="skill-area">
